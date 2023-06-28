@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -62,6 +63,7 @@ body {
   background-color: #eee;
   color: black;
 }
+
 .subnav:hover .subnav-content {
   display: block;
 }
@@ -100,12 +102,16 @@ body {
       <a onclick="showImg('Collateral_monkeys')">Collateral</a>
       <a onclick="showImg('Armada_monkeys')">Armada</a>
     </div>
-  </div> 
-<div>
-  <img id="shownies" class="responsive" src="">
-</div>
+  </div>
+  <hr>
+  <div>
+    <img id="shownies" class="responsive" src="">
+  </div>
+  </hr>
 </body>
 <script>
-  function showImg(n) { document.getElementById("shownies").src = "https://raw.githubusercontent.com/dumpster-of-things/outbreak/main/" + n + ".png"; }
+  function showImg(n) {
+    document.getElementById("shownies").src = "https://raw.githubusercontent.com/dumpster-of-things/outbreak/main/" + n + ".png";
+  }
 </script>
 </html>
