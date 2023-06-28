@@ -7,6 +7,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #666;
 }
 
 .navbar {
@@ -62,13 +63,16 @@ body {
   background-color: #eee;
   color: black;
 }
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
 .responsive {
   max-width: 100%;
   height: auto;
 }
-.subnav:hover .subnav-content {
-  display: block;
-}
+
 </style>
 </head>
 <body>
@@ -79,9 +83,11 @@ body {
       <a onclick="showImg('Alpine_radios')">Alpine</a>
       <a onclick="showImg('Golova_radios')">Golova</a>
       <a onclick="showImg('Ruka_radios')">Ruka</a>
-      <a onclick="showImg('Duga_radios')">Dugas</a>
+      <a onclick="showImg('Duga_radios')">Duga</a>
       <a onclick="showImg('Sanatorium_radios')">Sanatorium</a>
       <a onclick="showImg('Zoo_radios')">Zoo</a>
+      <a onclick="showImg('Collateral_radios')">Collateral</a>
+      <a onclick="showImg('Armada_radios')">Armada</a>
     </div>
   </div> 
   <div class="subnav">
@@ -90,17 +96,16 @@ body {
       <a onclick="showImg('Alpine_monkeys')">Alpine</a>
       <a onclick="showImg('Golova_monkeys')">Golova</a>
       <a onclick="showImg('Ruka_monkeys')">Ruka</a>
-      <a onclick="showImg('Duga_monkeys')">Dugas</a>
+      <a onclick="showImg('Duga_monkeys')">Duga</a>
       <a onclick="showImg('Sanatorium_monkeys')">Sanatorium</a>
       <a onclick="showImg('Zoo_monkeys')">Zoo</a>
+      <a onclick="showImg('Collateral_monkeys')">Collateral</a>
+      <a onclick="showImg('Armada_monkeys')">Armada</a>
     </div>
   </div> 
-</div>
   <img id="shownies" class="responsive" src="">
 </body>
 <script>
-  function showImg(n) {
-    document.getElementById("shownies").src = "https://raw.githubusercontent.com/dumpster-of-things/outbreak/main/" + n + ".png";
-  }
+  function showImg(n) { document.getElementById("shownies").src = "https://raw.githubusercontent.com/dumpster-of-things/outbreak/main/" + n + ".png"; }
 </script>
 </html>
